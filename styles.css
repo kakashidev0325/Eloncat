@@ -1,6 +1,6 @@
 /* ============================================================
    Elon's Cat — $SCHRODINGER
-   Deep navy, gold, cyan
+   Deep navy, Solana green, cyan
    ============================================================ */
 
 :root {
@@ -10,9 +10,9 @@
   --panel-2:    #182242;
   --line:       #2a3558;
 
-  --yellow:     #ffc107;
-  --yellow-hi:  #ffe56a;
-  --orange:     #ff8a1e;
+  --yellow:     #14f195;
+  --yellow-hi:  #6dffc4;
+  --orange:     #9945ff;
   --lime:       #3ec8ff;
 
   --concrete:   #f3f6ff;
@@ -61,7 +61,7 @@ a { color: inherit; }
 /* ── orbit stripe ──────────────────────────────────────────── */
 .tape {
   height: 8px;
-  background: linear-gradient(90deg, #ffc107, #ff8a1e 38%, #3ec8ff 72%, #2f6dff);
+  background: linear-gradient(90deg, #9945ff, #14f195 62%, #00ffa3);
 }
 .tape--top { position: relative; z-index: 60; }
 .tape--bottom { margin-top: 0; }
@@ -88,10 +88,10 @@ a { color: inherit; }
 .btn--yellow {
   background: var(--yellow);
   color: var(--ink);
-  box-shadow: 0 5px 0 #a87b00, 0 0 22px rgba(255,193,7,.28);
+  box-shadow: 0 5px 0 #08784a, 0 0 22px rgba(20,241,149,.28);
 }
-.btn--yellow:hover { background: var(--yellow-hi); transform: translateY(-2px); box-shadow: 0 7px 0 #a87b00, 0 0 28px rgba(255,193,7,.4); }
-.btn--yellow:active { transform: translateY(3px); box-shadow: 0 2px 0 #a87b00; }
+.btn--yellow:hover { background: var(--yellow-hi); transform: translateY(-2px); box-shadow: 0 7px 0 #08784a, 0 0 28px rgba(20,241,149,.4); }
+.btn--yellow:active { transform: translateY(3px); box-shadow: 0 2px 0 #08784a; }
 
 .btn--ghost {
   background: transparent;
@@ -102,7 +102,7 @@ a { color: inherit; }
 .btn--ghost:hover { border-color: var(--yellow); color: var(--yellow); transform: translateY(-2px); }
 .btn--ghost:active { transform: translateY(3px); box-shadow: 0 2px 0 #000; }
 
-.btn--sm { padding: 10px 18px; font-size: 13px; box-shadow: 0 4px 0 #a87b00; }
+.btn--sm { padding: 10px 18px; font-size: 13px; box-shadow: 0 4px 0 #08784a; }
 .btn--lg { padding: 18px 34px; font-size: 17px; }
 
 /* ── nav ───────────────────────────────────────────────────── */
@@ -135,7 +135,7 @@ a { color: inherit; }
   border: 2px solid var(--yellow);
   object-fit: cover;
   flex: none;
-  box-shadow: 0 0 16px rgba(255,193,7,.35);
+  box-shadow: 0 0 16px rgba(20,241,149,.35);
 }
 .nav__id { display: flex; flex-direction: column; line-height: 1; min-width: 0; }
 .nav__id strong {
@@ -186,7 +186,7 @@ a { color: inherit; }
   position: relative;
   padding: 56px 0 18px;
   background:
-    radial-gradient(900px 480px at 82% 12%, rgba(255,193,7,.16), transparent 60%),
+    radial-gradient(900px 480px at 82% 12%, rgba(20,241,149,.16), transparent 60%),
     radial-gradient(700px 420px at 8% 80%, rgba(62,200,255,.12), transparent 62%),
     linear-gradient(180deg, var(--ink-2), var(--ink));
   overflow: hidden;
@@ -245,7 +245,7 @@ a { color: inherit; }
   font-size: clamp(72px, 12vw, 132px);
   line-height: .86;
   color: var(--yellow);
-  text-shadow: 0 8px 0 rgba(0,0,0,.35), 0 0 28px rgba(255,193,7,.35);
+  text-shadow: 0 8px 0 rgba(0,0,0,.35), 0 0 28px rgba(20,241,149,.4);
   letter-spacing: .02em;
 }
 .hero__title-line--name {
@@ -253,7 +253,7 @@ a { color: inherit; }
   font-size: clamp(36px, 6.4vw, 78px);
   line-height: .92;
   letter-spacing: .03em;
-  background: linear-gradient(180deg, #fff6cc 0%, #ffc107 42%, #ff8a1e 100%);
+  background: linear-gradient(180deg, #d8ffe8 0%, #14f195 46%, #9945ff 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -338,7 +338,7 @@ a { color: inherit; }
   border-radius: 32px;
   overflow: hidden;
   background: #070b18;
-  border: 2px solid rgba(255,193,7,.5);
+  border: 2px solid rgba(20,241,149,.5);
   box-shadow:
     0 0 0 6px rgba(62,200,255,.08),
     0 24px 60px rgba(0,0,0,.5);
@@ -349,7 +349,7 @@ a { color: inherit; }
   margin: 36px auto 42px;
   border-radius: 28px;
   overflow: hidden;
-  border: 2px solid rgba(255,193,7,.5);
+  border: 2px solid rgba(20,241,149,.5);
   box-shadow:
     0 0 0 6px rgba(62,200,255,.08),
     0 28px 70px rgba(0,0,0,.55);
@@ -358,7 +358,7 @@ a { color: inherit; }
 
 .photo {
   position: relative;
-  border: 2px solid rgba(255,193,7,.55);
+  border: 2px solid rgba(20,241,149,.55);
   border-radius: 28px;
   overflow: hidden;
   background: var(--panel);
@@ -522,7 +522,7 @@ a { color: inherit; }
 .spec::before { left: 12px; }
 .spec::after  { right: 12px; }
 .spec:hover { border-color: var(--yellow); transform: translateY(-4px); }
-.spec--hero { border-color: var(--yellow); box-shadow: 0 0 0 4px rgba(255,199,0,.08); }
+.spec--hero { border-color: var(--yellow); box-shadow: 0 0 0 4px rgba(20,241,149,.08); }
 .spec__k { font-size: 12px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; color: var(--muted); }
 .spec__v {
   font-family: var(--font-display);
@@ -570,7 +570,7 @@ a { color: inherit; }
   gap: 40px;
   align-items: start;
   background:
-    radial-gradient(620px 320px at 12% 0%, rgba(255,199,0,.10), transparent 70%),
+    radial-gradient(620px 320px at 12% 0%, rgba(20,241,149,.10), transparent 70%),
     var(--panel);
   border: 2px solid var(--line);
   border-radius: 22px;
@@ -619,16 +619,16 @@ a { color: inherit; }
 .hc__row button.is-on {
   border-color: var(--yellow);
   color: var(--yellow);
-  background: rgba(255,199,0,.10);
+  background: rgba(20,241,149,.10);
 }
 .hc__row button.is-primary {
   background: var(--yellow);
   border-color: var(--yellow);
   color: var(--ink);
-  box-shadow: 0 4px 0 #a87b00;
+  box-shadow: 0 4px 0 #08784a;
 }
 .hc__row button.is-primary:hover { background: var(--yellow-hi); border-color: var(--yellow-hi); color: var(--ink); }
-.hc__row button.is-primary:active { transform: translateY(3px); box-shadow: 0 1px 0 #a87b00; }
+.hc__row button.is-primary:active { transform: translateY(3px); box-shadow: 0 1px 0 #08784a; }
 
 .hc__swatches { display: flex; flex-wrap: wrap; gap: 9px; }
 .hc__swatch {
@@ -642,7 +642,7 @@ a { color: inherit; }
 .hc__swatch:hover { transform: translateY(-3px); border-color: var(--concrete); }
 .hc__swatch.is-on {
   border-color: var(--yellow);
-  box-shadow: 0 0 0 3px rgba(255,199,0,.28);
+  box-shadow: 0 0 0 3px rgba(20,241,149,.28);
   transform: translateY(-2px);
 }
 
@@ -670,7 +670,7 @@ a { color: inherit; }
 /* dropzone (before an image is chosen) */
 .hh__drop {
   background:
-    radial-gradient(620px 320px at 50% 0%, rgba(255,199,0,.11), transparent 70%),
+    radial-gradient(620px 320px at 50% 0%, rgba(20,241,149,.11), transparent 70%),
     var(--panel);
   border: 2px dashed #3d4d78;
   border-radius: 22px;
@@ -736,10 +736,10 @@ a { color: inherit; }
   background: var(--yellow);
   border-color: var(--yellow);
   color: var(--ink);
-  box-shadow: 0 4px 0 #a87b00;
+  box-shadow: 0 4px 0 #08784a;
 }
 .hh__row button.is-primary:hover { background: var(--yellow-hi); border-color: var(--yellow-hi); color: var(--ink); }
-.hh__row button.is-primary:active { transform: translateY(3px); box-shadow: 0 1px 0 #a87b00; }
+.hh__row button.is-primary:active { transform: translateY(3px); box-shadow: 0 1px 0 #08784a; }
 .hh__row button.is-danger:hover { border-color: #e2544a; color: #ff7a70; }
 
 .hh__hint { margin: 2px 0 0; color: var(--muted); font-size: 13px; text-align: center; }
@@ -782,7 +782,7 @@ a { color: inherit; }
   align-items: center; justify-content: space-between;
   gap: 34px;
   background:
-    radial-gradient(600px 300px at 20% 0%, rgba(255,199,0,.16), transparent 70%),
+    radial-gradient(600px 300px at 20% 0%, rgba(20,241,149,.16), transparent 70%),
     var(--panel);
   border: 2px solid var(--line);
   border-radius: 22px;
@@ -816,7 +816,7 @@ a { color: inherit; }
   border-bottom: 1px solid var(--line);
 }
 .footer__brand { display: flex; align-items: center; gap: 14px; }
-.footer__brand img { width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--yellow); object-fit: cover; box-shadow: 0 0 16px rgba(255,193,7,.28); }
+.footer__brand img { width: 52px; height: 52px; border-radius: 50%; border: 2px solid var(--yellow); object-fit: cover; box-shadow: 0 0 16px rgba(20,241,149,.28); }
 .footer__brand strong { display: block; font-family: var(--font-display); font-size: 20px; color: var(--yellow); }
 .footer__brand span { font-size: 13.5px; color: var(--muted); }
 .footer__nav { display: flex; flex-wrap: wrap; gap: 22px; }

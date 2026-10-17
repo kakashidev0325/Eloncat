@@ -98,13 +98,13 @@
     var k = scaleFactor();
     ctx.save();
     ctx.translate(ht.x, ht.y); ctx.rotate(ht.rot);
-    ctx.strokeStyle = "#ffc700"; ctx.lineWidth = 1.5 * k; ctx.setLineDash([6 * k, 5 * k]);
+    ctx.strokeStyle = "#14f195"; ctx.lineWidth = 1.5 * k; ctx.setLineDash([6 * k, 5 * k]);
     ctx.strokeRect(-ht.w / 2, -hatH(ht) / 2, ht.w, hatH(ht));
     ctx.restore();
 
     var h = handlePos(ht);
     ctx.beginPath(); ctx.arc(h.x, h.y, 9 * k, 0, Math.PI * 2);
-    ctx.fillStyle = "#ffc700"; ctx.fill();
+    ctx.fillStyle = "#14f195"; ctx.fill();
     ctx.lineWidth = 2 * k; ctx.setLineDash([]); ctx.strokeStyle = "#0c0c0c"; ctx.stroke();
   }
 

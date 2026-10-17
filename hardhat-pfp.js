@@ -26,7 +26,7 @@
   var INNER = 434;         // radius of the art disc; everything beyond is ring
 
   var PALETTE = [
-    { name: "Launch Gold", hex: "#ffc107" },
+    { name: "Solana Green", hex: "#14f195" },
     { name: "Sun Gold", hex: "#f0b90b" },
     { name: "Booster Orange", hex: "#ff8a1e" },
     { name: "Ion Cyan", hex: "#3ec8ff" },
@@ -43,7 +43,7 @@
     style: "glow",
     bg: "#102a62",
     ring: "#070814",
-    glow: "#ffc107",
+    glow: "#14f195",
     badge: false
   };
 
