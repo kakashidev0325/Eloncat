@@ -20,7 +20,7 @@ const CONFIG = {
 
   // Socials
   twitter:  "https://x.com/eloncatsol_x",
-  telegram: "https://x.com/eloncatsol_x",
+  telegram: "https://t.me/eloncat_tg",
 
   supply:   "",
 };
