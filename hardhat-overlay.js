@@ -1,5 +1,5 @@
 /* ============================================================
-   Sticker overlay — drop a picture, put Baby Asteroid on it.
+   Sticker overlay — drop a picture, put Elon's Cat on it.
 
    The companion to the space PFP builder. Everything here is
    namespaced `hh` so the two tools can share a page.
